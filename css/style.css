@@ -1,0 +1,212 @@
+#countdown {
+    color: rgb(40, 132, 219);
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 15px;
+}
+
+/*
+#cards {
+    display: none;
+}
+*/
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loader-con {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#000000eb;
+}
+
+.list-group-item{
+    background: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+#confetti {
+    display: none;
+    left: -275px;
+    top: -55px;
+} 
+
+.formField {
+    margin: 10px;
+    position: relative;
+  }
+  
+  .formField input {
+    padding: 20px 15px 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 0 5px transparent;
+  }
+  
+  .formField input:hover,
+  .formField input:focus {
+    box-shadow: 0 0 0 2px #333;
+  }
+  
+  .formField span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 13px 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: -1px -1px 0 #f1f1f1, 1px -1px 0 #f1f1f1, -1px 1px 0 #f1f1f1,
+      1px 1px 0 #f1f1f1;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .formField input:focus + span,
+  .formField input:valid + span {
+    transform: translateY(-12px) translateX(-5px) scale(0.95);
+    transition: 0.3s ease-in-out;
+  }
+  
+
+
+
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+
+   .button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 2px;
+    background: #424242;
+    color: white;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, .1) inset,
+      0 0 0 1px rgba(0, 0, 0, .7),
+      0 -1px 0 0 rgba(0, 0, 0, .7) inset,
+      0 1px 2px 1px rgba(0, 0, 0, .6);
+    cursor: pointer;
+    transition: 50ms ease-out;
+    font-weight: 600;
+  }
+  
+  .button:hover, .button:focus, .button:focus-visible {
+    background: #353535;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, .05) inset,
+      0 0 0 1px rgba(0, 0, 0, .7),
+      0 -1px 0 0 rgba(0, 0, 0, .7) inset,
+      0 1px 2px 1px rgba(0, 0, 0, .6);
+    border: none;
+    outline: none;
+  }
+  
+  .button:active {
+    background: #181818;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .7) inset,
+      0 1px 0 0 rgba(255, 255, 255, .05),
+      0 1px 2px 1px rgba(0, 0, 0, .6) inset;
+  }
+
+
